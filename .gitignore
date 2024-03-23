@@ -1,0 +1,5 @@
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+.preferences.yaml
