@@ -43,9 +43,7 @@ CREATE OR REPLACE TABLE virtual-aileron-412616.nyc_citi_bike_rides.dim_station(
   station_name STRING,
   date_part DATE
 
-)
-PARTITION BY date_part;
-
+);
 
 
 CREATE OR REPLACE TABLE virtual-aileron-412616.nyc_citi_bike_rides.rides(
