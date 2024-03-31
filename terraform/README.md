@@ -1,15 +1,16 @@
-# Steps to provisioning resources using terraform
+# Steps to Provisioning Resources Using Terraform
 
-## Create a Service Account in GCP by following these steps:
-1. Navigate to your Google cloud console and select IAM & Admin 
+## Create a Service Account in GCP 
+1. Navigate to the Google cloud console and select IAM & Admin 
 
-2. Select Create Service Account and add the following permissions to your service account
+2. Click on  "Create Service Account" and add provide a name for your service account
+3. Add the following IAM roles to your service account:
    
 		BigQuery Admin
 	 	Compute Admin
 		Storage Admin
-3. Click on the Harmburger ico next to the service account, select manage keys, click on add key, choose Json format and copy the json to a file in your local.
-
+4. After creating the service account, click on the harmburger icon next to the service account, then select "Manage keys"
+5. Click on "Add key", choose JSON format, and save the JSON file locally.
 
 ## Provision Resources to GCP
 
@@ -31,10 +32,10 @@
 4. Run the following commands:
 
 		terraform fmt  -> "This formats the .tf files"
-		terraform init
+		terraform init	-> This initializes the terraform configuration
 		terraform apply
 
-5. if you want to delete all the resources you have provisioned, run this command:
+5. Deleting Resources
 
 		terraform destroy
 
