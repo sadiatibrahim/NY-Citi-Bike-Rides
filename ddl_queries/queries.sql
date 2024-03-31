@@ -41,10 +41,11 @@ PARTITION BY date_part;
 CREATE OR REPLACE TABLE virtual-aileron-412616.nyc_citi_bike_rides.dim_station(
   station_id STRING,
   station_name STRING,
-  station_lat FLOAT64,
-  station_lng FLOAT64
+  date_part DATE
 
-);
+)
+PARTITION BY date_part;
+
 
 
 CREATE OR REPLACE TABLE virtual-aileron-412616.nyc_citi_bike_rides.rides(
@@ -56,4 +57,6 @@ CREATE OR REPLACE TABLE virtual-aileron-412616.nyc_citi_bike_rides.rides(
   ended_at TIMESTAMP,
   member_casual_id INT64,
   date_part DATE
-);
+)
+
+PARTITION BY date_part;
