@@ -4,6 +4,7 @@ ER-Diagram
 
 ![image](https://github.com/sadiatibrahim/NY-Citi-Bike-Rides/assets/57956925/7fd7ef1d-ed16-496e-970f-34bbb1a90d64)
 
+
 ## Table Details
 ### citi_bikes (Partitioned Table)
 #### Description: The citi_bikes table serves as the main repository for all monthly datasets from cloud storage.
