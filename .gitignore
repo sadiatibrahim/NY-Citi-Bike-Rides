@@ -5,3 +5,9 @@
 .terraform
 
 .preferences.yaml
+dbt_packages
+logs
+__init__.py
+__pycache__
+target
+.user.yml
