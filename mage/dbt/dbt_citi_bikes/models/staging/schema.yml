@@ -1,0 +1,68 @@
+version: 2
+
+sources:
+  - name: staging
+    database: virtual-aileron-412616
+    schema: nyc_citi_bike_rides
+    tables:
+      - name: citi_bikes
+      - name: rides
+      - name: dim_station
+
+models:
+  - name: stg_rides
+    description: consists of all the trips that were made in a month
+    
+    columns:
+      - name: ride_id
+        description: This is a primary key for this table
+        tests:
+          - unique:
+              severity: warn
+          - not_null:
+              severity: warn
+
+      - name: rideable_type_id
+        description: This is an integer that represents the type of bike that was used for a trip. 0 represents classic_bike, and 1 represents electric_bike
+
+      - name: ride_type
+        description: The type of bike used for the trip
+
+      - name: start_station_id
+        description: The station id where the trip started
+
+      - name: end_station_id
+        description: The station id where the trip ended
+
+      - name: started_at
+        description: The date and time when the trip started
+
+      - name: ended_at
+        description: The date and time when the trip ended
+
+      - name: member_casual_id
+        description: This is an integer that identifies if the user is a member or casual rider
+
+      - name: date_part
+        description: Partitioned date that contains the latest partition date from the source table
+
+      - name: member_type
+        description: This is a string that was generated based on the value of member_casual_id. if member_casual_id is 0 then the user is a member, if it is 1 then it was a casual ride
+
+  - name: stg_dim_station
+    description: This table contains information about all the stations that were visited in a month
+
+    columns:
+      - name: station_id
+        description: This is the primary key for this table.
+        tests:
+          - unique:
+              severity: warn
+          - not_null:
+              severity: warn
+
+      - name: station_name
+        description: The name of the station
+
+      - name: date_part
+        description: Partitioned date that contains the latest partition date from the source table

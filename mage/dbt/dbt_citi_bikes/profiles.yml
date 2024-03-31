@@ -1,0 +1,13 @@
+citi_bikes:
+  outputs:
+
+    dev:
+      type: bigquery
+      method: service-account
+      project: virtual-aileron-412616
+      dataset: nyc_citi_bike_rides
+      threads: 4
+      keyfile: /secrets/credentials/mage_credentials
+     
+
+  target: dev

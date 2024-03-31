@@ -1,0 +1,14 @@
+sources:
+- description: Dataframes Mage upstream blocks
+  loader: mage
+  name: mage_dbt_citi_bikes
+  schema: nyc_citi_bike_rides
+  tables:
+  - description: Dataframe for block `load_data_to_bigquery` of the `citi_bike_ride`
+      mage pipeline.
+    identifier: mage_citi_bike_ride_load_data_to_bigquery
+    meta:
+      block_uuid: load_data_to_bigquery
+      pipeline_uuid: citi_bike_ride
+    name: citi_bike_ride_load_data_to_bigquery
+version: 2
