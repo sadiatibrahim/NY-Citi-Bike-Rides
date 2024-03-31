@@ -1,7 +1,7 @@
 
 variable "credentials" {
   description = "my-credentials"
-  default     = "patg to your service account"
+  default     = "path to your service account"
 
 }
 
