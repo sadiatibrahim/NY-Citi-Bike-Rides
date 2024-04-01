@@ -1,9 +1,8 @@
 # NY-Citi-Bike-Rides
 
-## Problem Description
+## Project Description
 
-This project aims to analyze the NYC Citi Bike Rides dataset to determine the total number of trips for each day of the week in a month. Additionally, it seeks to identify the busiest day of the week in a month and the total number of trips for each type of bike.
-
+This project aims to analyze the NYC Citi Bike Rides dataset to determine the total number of trips for each day of the week in a month. Additionally, it seeks to identify the busiest day of the week in a month and also gives visibility to the type of bike that was used the most.
 
 ## Architecture
 ![image](https://github.com/sadiatibrahim/NY-Citi-Bike-Rides/assets/57956925/eb9cb276-300c-4858-b688-83aea562fe73)
