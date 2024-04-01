@@ -6,7 +6,8 @@ This project aims to analyze the NYC Citi Bike Rides dataset to determine the to
 
 
 ## Architecture
-![image](https://github.com/sadiatibrahim/NY-Citi-Bike-Rides/assets/57956925/ab38c2d4-45ee-4360-a320-52859de451ba)
+![image](https://github.com/sadiatibrahim/NY-Citi-Bike-Rides/assets/57956925/eb9cb276-300c-4858-b688-83aea562fe73)
+
 
 ## Strategy
 
