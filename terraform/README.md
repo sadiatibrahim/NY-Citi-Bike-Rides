@@ -27,7 +27,20 @@
 		default     = "path to your service account"
 	
 		}
-				 		
+
+3. Change the name of the bucket and dataset to the name you want your bucket and dataset to be
+
+   		variable "bq_dataset_name" {
+		 description = "Big query dataset name"
+		 default     = "nyc_citi_bike_rides"
+		
+		}
+		
+		variable "gcs_bucket_name" {
+		description = "Storage bucket name"
+		 default     = "sadiat_citi_bike_rides_bucket"
+		
+		}
 3. Install terraform on your machine if you don't already have it
 4. Run the following commands:
 
