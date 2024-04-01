@@ -4,6 +4,10 @@
 
 This project aims to analyze the NYC Citi Bike Rides dataset to determine the total number of trips for each day of the week in a month. Additionally, it seeks to identify the busiest day of the week in a month and the total number of trips for each type of bike.
 
+
+## Architecture
+![image](https://github.com/sadiatibrahim/NY-Citi-Bike-Rides/assets/57956925/ab38c2d4-45ee-4360-a320-52859de451ba)
+
 ## Strategy
 
 Batch Processing serves as the primary strategy for this project. Monthly jobs are scheduled using Mage as the workflow orchestrator. Terraform (Infrastructure as Code) provisions resources such as buckets, virtual machines, and datasets in Google BigQuery. Mage is utilized for orchestration within the Google Cloud Platform.
