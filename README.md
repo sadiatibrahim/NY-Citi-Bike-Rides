@@ -54,7 +54,9 @@ Add the Service Account to Secrets Manager:
   Type Secret Manager on the search bar in your google cloud console, select "CREATE SECRET", provide the name of your secret as "mage_credentials" and for the "Secret value" section you can either paste the JSON you copied in the previous step in the "Secret value" section or upload the json file. either one works.
 
 Run Terraform commands to deploy Mage:
-  cd mage-ai-templates/gcp
+cd to this folder 
+
+      cd gcp
   edit the variables.tf file by adding your project id
   Run these commands:
 
